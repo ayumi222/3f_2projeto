@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root{
-    --cor-de-fundo: #FFE8C5;
-    --cor-primaria: #97BE5A;
-    --cor-secundaria: #FF0000;
+    --cor-de-fundo: #3A6D8C;
+    --cor-primaria: #001F3F;
+    --cor-secundaria: #EAD8B1;
+    --fonte: "Nunito", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-secundaria);
+    height: 100vh;
+    font-family: var(--font);
+}
+
+header{
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+h1{
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    font-weight: 700;
+    /*"peso" da fonte*/
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+/*vai lá no nav e pega o link*/
+nav a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+}
+/*LINKS QUE ESTÃO DENTRO DA TAG DO NAV,ESTILIZAÇÃO PARA QUANDO PASSA O MOUSE*/ 
+
+nav a:hover{
+    text-decoration: underline;
+    /*reduz o tamanho*/
+    transform: scale(0.9);
+    /*cria uma transição com 0.5s para o trasform*/
+    transition: transform 0.5s;
 }
