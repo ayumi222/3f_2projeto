@@ -1,4 +1,4 @@
-import { getCSS } from "./comum";
+import { getCSS } from "./comum.js";
 async function quantidadeDeUsuarios(){
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
     const res = await fetch(url);
